@@ -1,10 +1,8 @@
 import * as THREE from 'three'
 import React, { Suspense, useRef } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { Html, Environment, useGLTF, ContactShadows, OrbitControls, OrthographicCamera, Loader } from '@react-three/drei'
+import { Html, Environment, useGLTF, ContactShadows, OrbitControls, Loader } from '@react-three/drei'
 import HeroPage from './HeroPage'
-import TheatreModel from './TheatreModel'
-import NewTheatre from './NewTheatre'
 import ClassModel from './Classroom'
 import TvModel from './TvRoom'
 
@@ -65,7 +63,6 @@ export default function App() {
         <ContactShadows rotation-x={Math.PI / 2} position={[0, -4.5, 0]} opacity={1} width={20} height={20} blur={2} far={4.5} />
         <OrbitControls enablePan={false} enableZoom={false} minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2} />
       </Canvas>
-
 
       {/* ///class room test  */}
       <Canvas dpr={[1, 2]} camera={{ position: [-10, 0, -25], fov: 35 }}>
