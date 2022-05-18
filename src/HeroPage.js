@@ -17,11 +17,11 @@ const replayOptions = {
 }
 export default function Example() {
   return (
-    <div className="relative bg-gray-50">
+    <div className="relative bg-gray-50 h-[100vh]">
       <Replay
         // source="https://livesim.dashif.org/livesim/chunkdur_1/ato_7/testpic4_8s/Manifest.mpd"
         source="https://mw-stream.azureedge.net/mwvideoraw/videos/kaala/fdfs/hls/master.m3u8"
-        initialPlaybackProps={{ isPaused: false }}
+        initialPlaybackProps={{ isPaused: true }}
         options={replayOptions}>
         {/* <ShakaVideoStreamer /> */}
         <HlsjsVideoStreamer />

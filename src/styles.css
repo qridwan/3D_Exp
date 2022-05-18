@@ -1,4 +1,4 @@
-@import url('https://rsms.me/inter/inter.css');
+/* @import url('https://rsms.me/inter/inter.css'); */
 
 * {
   box-sizing: border-box;
@@ -17,13 +17,13 @@ main,
 body {
   font-family: inter;
   color: black;
-  background: #202025;
+  background: #e0e0e1;
 }
 
 .content {
   width: 334px;
   height: 216px;
-  background: #f0f0f0;
+  background: #131111;
   border-radius: 3px;
   overflow-y: auto;
   padding: 0;
@@ -32,7 +32,40 @@ body {
 .wrapper {
   padding: 10px;
   width: 668px;
-  height: 432px;
+  height: 832px;
   transform: scale(0.5);
   transform-origin: top left;
+}
+.content-classroom {
+  display: block !important;
+}
+.wrapper-classroom {
+  padding: 10px;
+  width: 505px;
+  height: 490px;
+  background-color: #0000 !important;
+  /* transform: scale(100); */
+  /* transform-origin: bottom; */
+}
+.content-tv {
+  /* width: 950px;
+  height: 450px; */
+  background: #60fb27;
+  border-radius: 3px;
+  /* overflow: hidden !important; */
+  /* padding: 10px; */
+}
+.wrapper-tv {
+  /* padding: 10px; */
+  width: 1180px;
+  height: 450px;
+  background-color: rgba(208, 0, 0, 0) !important;
+  transform: scale(1);
+  transform-origin: top;
+  /* overflow: hidden !important; */
+}
+.canvas {
+  height: 500px;
+  width: 668px;
+  margin-top: 2vh;
 }
